@@ -10,3 +10,4 @@
 
 # virtual machine crash logs, see http://www.java.com/en/download/help/error_hotspot.xml
 hs_err_pid*
+!/wd/src/Resources/selenium-server-standalone-3.0.1.jar
