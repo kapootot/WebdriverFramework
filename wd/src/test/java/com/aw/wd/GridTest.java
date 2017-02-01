@@ -64,8 +64,20 @@ public class GridTest {
     }
 
 
-    @Test
-    public void testTitleInGrid(){
+    @Test (priority = 1)
+    public void testTitleInGrid2(){
+        try {
+            Thread.sleep(5000);
+        } catch (InterruptedException e) {
+            e.printStackTrace();
+        }
+        String title = driver.getTitle();
+        System.out.println(title);
+        assert true;
+    }
+
+    @Test (priority = 2)
+    public void testTitleInGrid1(){
         try {
             Thread.sleep(5000);
         } catch (InterruptedException e) {

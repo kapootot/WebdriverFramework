@@ -1,2 +1,2 @@
-com/aw/wd/LocalTest.class
-com/aw/wd/GridTest.class
+test/java/com/aw/wd/GridTest.class
+test/java/com/aw/wd/LocalTest.class
