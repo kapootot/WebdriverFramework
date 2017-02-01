@@ -64,19 +64,7 @@ public class GridTest {
     }
 
 
-    @Test (priority = 1)
-    public void testTitleInGrid2(){
-        try {
-            Thread.sleep(5000);
-        } catch (InterruptedException e) {
-            e.printStackTrace();
-        }
-        String title = driver.getTitle();
-        System.out.println(title);
-        assert true;
-    }
-
-    @Test (priority = 2)
+    @Test
     public void testTitleInGrid1(){
         try {
             Thread.sleep(5000);
@@ -87,5 +75,89 @@ public class GridTest {
         System.out.println(title);
         assert true;
     }
+
+//    @Test
+//    public void testTitleInGrid2(){
+//        try {
+//            Thread.sleep(5000);
+//        } catch (InterruptedException e) {
+//            e.printStackTrace();
+//        }
+//        String title = driver.getTitle();
+//        System.out.println(title);
+//        assert true;
+//    }
+//
+//    @Test
+//    public void testTitleInGrid3(){
+//        try {
+//            Thread.sleep(5000);
+//        } catch (InterruptedException e) {
+//            e.printStackTrace();
+//        }
+//        String title = driver.getTitle();
+//        System.out.println(title);
+//        assert true;
+//    }
+//
+//    @Test
+//    public void testTitleInGrid4(){
+//        try {
+//            Thread.sleep(5000);
+//        } catch (InterruptedException e) {
+//            e.printStackTrace();
+//        }
+//        String title = driver.getTitle();
+//        System.out.println(title);
+//        assert true;
+//    }
+//
+//    @Test
+//    public void testTitleInGrid5(){
+//        try {
+//            Thread.sleep(5000);
+//        } catch (InterruptedException e) {
+//            e.printStackTrace();
+//        }
+//        String title = driver.getTitle();
+//        System.out.println(title);
+//        assert true;
+//    }
+//
+//    @Test
+//    public void testTitleInGrid6(){
+//        try {
+//            Thread.sleep(5000);
+//        } catch (InterruptedException e) {
+//            e.printStackTrace();
+//        }
+//        String title = driver.getTitle();
+//        System.out.println(title);
+//        assert true;
+//    }
+//
+//    @Test
+//    public void testTitleInGrid7(){
+//        try {
+//            Thread.sleep(5000);
+//        } catch (InterruptedException e) {
+//            e.printStackTrace();
+//        }
+//        String title = driver.getTitle();
+//        System.out.println(title);
+//        assert true;
+//    }
+//
+//    @Test
+//    public void testTitleInGrid8(){
+//        try {
+//            Thread.sleep(5000);
+//        } catch (InterruptedException e) {
+//            e.printStackTrace();
+//        }
+//        String title = driver.getTitle();
+//        System.out.println(title);
+//        assert true;
+//    }
 }
 
