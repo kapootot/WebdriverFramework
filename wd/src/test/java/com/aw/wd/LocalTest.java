@@ -1,6 +1,7 @@
-package com.aw.wd;
+package test.java.com.aw.wd;
 
 import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.firefox.FirefoxDriver;
 import org.openqa.selenium.firefox.FirefoxProfile;
 import org.testng.annotations.AfterMethod;
@@ -11,7 +12,7 @@ import org.testng.annotations.Test;
  * Created by amirwaisman on 2/1/17.
  */
 
-public class AnotherTest {
+public class LocalTest {
 
     WebDriver driver;
 
@@ -21,6 +22,8 @@ public class AnotherTest {
         profile.setPreference("webdriver.log.driver", "OFF");
         System.setProperty("webdriver.gecko.driver", "/Users/amirwaisman/Google Drive/WebdriverFramework/wd/src/drivers/geckodriver");
         driver = new FirefoxDriver();
+
+//        driver = new ChromeDriver();
     }
 
     @AfterMethod
