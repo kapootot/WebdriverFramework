@@ -1,5 +1,6 @@
 package test.java.com.aw.wd;
 
+import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.firefox.FirefoxDriver;
@@ -43,5 +44,15 @@ public class LocalTest {
         String title = driver.getTitle();
         System.out.println(title);
         assert true;
+    }
+
+    @Test
+    public void testFacebookLogin(){
+        try {
+            Thread.sleep(5000);
+        } catch (InterruptedException e) {
+            e.printStackTrace();
+        }
+        driver.findElement(By.cssSelector("generic-header__login-link md-button md-ink-ripple")).click();
     }
 }

@@ -1,5 +1,6 @@
 package test.java.com.aw.wd;
 
+import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.remote.DesiredCapabilities;
 import org.openqa.selenium.remote.RemoteWebDriver;
@@ -64,20 +65,8 @@ public class GridTest {
     }
 
 
-    @Test
-    public void testTitleInGrid1(){
-        try {
-            Thread.sleep(5000);
-        } catch (InterruptedException e) {
-            e.printStackTrace();
-        }
-        String title = driver.getTitle();
-        System.out.println(title);
-        assert true;
-    }
-
 //    @Test
-//    public void testTitleInGrid2(){
+//    public void testTitleInGrid1(){
 //        try {
 //            Thread.sleep(5000);
 //        } catch (InterruptedException e) {
@@ -87,6 +76,21 @@ public class GridTest {
 //        System.out.println(title);
 //        assert true;
 //    }
+
+    @Test
+    public void testFacebookLogin(){
+        try {
+            Thread.sleep(5000);
+        } catch (InterruptedException e) {
+            e.printStackTrace();
+        }
+        driver.findElement(By.cssSelector("button[class='generic-header__login-link md-button md-ink-ripple']")).click();
+        try {
+            Thread.sleep(5000);
+        } catch (InterruptedException e) {
+            e.printStackTrace();
+        }
+    }
 //
 //    @Test
 //    public void testTitleInGrid3(){
